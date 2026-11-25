@@ -79,7 +79,7 @@ body {
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
 <link rel="manifest" href="index.manifest.json">
-<style>body{background:#5c172e;}#rotar{display:none;position:fixed;inset:0;z-index:99;background:#5c172e;color:#f9b200;font:bold 7vw sans-serif;text-align:center;flex-direction:column;align-items:center;justify-content:center;gap:4vh;}#rotar .m{width:22vw;height:38vw;border:2.4vw solid #f9b200;border-radius:4vw;animation:g 1.8s ease-in-out infinite;}@keyframes g{0%,25%{transform:rotate(0)}65%,100%{transform:rotate(-90deg)}}@media (orientation:portrait) and (pointer:coarse){#rotar{display:flex;}}</style><script>document.addEventListener('DOMContentLoaded',function(){var d=document.createElement('div');d.id='rotar';d.innerHTML='<div class=m></div><div>Gira el móvil<br>para jugar</div>';document.body.appendChild(d);});function papardoLandscape(){var de=document.documentElement;if(document.fullscreenElement||!de.requestFullscreen)return;de.requestFullscreen({navigationUI:'hide'}).then(function(){if(screen.orientation&&screen.orientation.lock){screen.orientation.lock('landscape').catch(function(){});}}).catch(function(){});}window.addEventListener('touchend',papardoLandscape,{passive:true});</script>
+<meta name='apple-mobile-web-app-capable' content='yes'><meta name='mobile-web-app-capable' content='yes'><meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'><meta name='apple-mobile-web-app-title' content='Papardo Invaders'><style>body{background:#5c172e;}#rotar{display:none;position:fixed;inset:0;z-index:99;background:#5c172e;color:#f9b200;font:bold 7vw sans-serif;text-align:center;flex-direction:column;align-items:center;justify-content:center;gap:4vh;}#rotar .m{width:22vw;height:38vw;border:2.4vw solid #f9b200;border-radius:4vw;animation:g 1.8s ease-in-out infinite;}@keyframes g{0%,25%{transform:rotate(0)}65%,100%{transform:rotate(-90deg)}}@media (orientation:portrait) and (pointer:coarse){#rotar{display:flex;}}</style><script>document.addEventListener('DOMContentLoaded',function(){var d=document.createElement('div');d.id='rotar';d.innerHTML='<div class=m></div><div>Gira el móvil<br>para jugar</div>';document.body.appendChild(d);});function papardoLandscape(){var de=document.documentElement;if(document.fullscreenElement||document.webkitFullscreenElement)return;var lock=function(){if(screen.orientation&&screen.orientation.lock){screen.orientation.lock('landscape').catch(function(){});}};if(de.requestFullscreen){de.requestFullscreen({navigationUI:'hide'}).then(lock).catch(function(){});}else if(de.webkitRequestFullscreen){de.webkitRequestFullscreen();}}window.addEventListener('touchend',papardoLandscape,{passive:true});</script>
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -98,7 +98,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":3288384,"index.wasm":35376909},"focusCanvas":true,"gdextensionLibs":[],"serviceWorker":"index.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":3309664,"index.wasm":35376909},"focusCanvas":true,"gdextensionLibs":[],"serviceWorker":"index.service.worker.js"};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
