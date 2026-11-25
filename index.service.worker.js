@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1795631434|4371280';
+const CACHE_VERSION = '1795631734|4825214';
 /** @type {string} */
 const CACHE_PREFIX = 'Papardo Invaders-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
